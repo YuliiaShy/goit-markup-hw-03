@@ -12,32 +12,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
   </head>
-  <body>
+    <body>
     <!-- header -->
-    <header>
-      <nav>
+    <header class="page-header">
+      <div class="container header-flex">
+      <nav class="nav-flex">
         <a class="logo link-none" href="./index.html">Web<span class="logo-header">Studio</span></a>
-        <ul class="site-nav list-none">
-          <li><a class="link  link-none current" href="./index.html">Студия</a></li>
-          <li><a class="link link-none" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="link link-none" href="">Контакты</a></li>
+        <ul class="site-nav">
+          <li class="nav-item"><a class="link link-none current" href="./index.html">Студия</a></li>
+          <li class="nav-item"><a class="link link-none" href="./portfolio.html">Портфолио</a></li>
+          <li class="nav-item"><a class="link link-none" href="">Контакты</a></li>
         </ul>
       </nav>
-      <ul class="site-contacts list-none">
-        <li><a class="contact link-none" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="contact link-none" href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="site-contacts">
+        <li class="contact-item"><a class="contact link-none" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li class="contact-item"><a class="contact link-none" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
+      </div>
     </header>
     <main>
       <!-- hero -->
-      <section class="hero">
+      <section class=" section hero">
+        <div class="container">
         <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
         <button class="hero-button" type="button">Заказать услугу</button>
+      </div>
       </section>
       <!-- advantage -->
-      <section class="advantage">
-        <h2 class="hidden">Преимущества</h2>
-        <ul class="advantage-list list-none">
+      <section class=" section advantage">
+        <div class="container">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="advantage-list">
           <li>
             <h3 class="advantage-title">Внимание к деталям</h3>
             <p class="advantage-text">
@@ -67,11 +72,13 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
       <!-- services -->
-      <section class="services">
+      <section class="section services">
+        <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
-        <ul class="services-list list-none">
+        <ul class="services-list">
           <li>
           <img src="./images/desktop.jpg" alt="персональный компьютер" width="370"/>
           </li>
@@ -82,44 +89,49 @@
           <img src="./images/tablet.jpg" alt="планшет" width="370"/>
           </li>
         </ul>
+        </div>
       </section>
       <!-- team -->
-      <section class="team">
+      <section class="section team">
+        <div class="container">
         <h2 class="section-title">Наша команда</h2>
-        <ul class="team-list list-none">
+        <ul class="team-list">
           <li>
             <img src="./images/Igor.jpg" alt="фотография Игоря Демьяненко" width="270"/>
-            <h3 class="team-title">Игорь Демьяненко</h3>
-            <p class="team-text" lang="en">Product Designer</p>
+            <h3 class="team-title text-centr">Игорь Демьяненко</h3>
+            <p class="team-text text-centr" lang="en">Product Designer</p>
           </li>
           <li>
             <img src="./images/Olga.jpg" alt="фотография Ольги Репиной" width="270"/>
-            <h3 class="team-title">Ольга Репина</h3>
-            <p class="team-text" lang="en">Frontend Developer</p>
+            <h3 class="team-title text-centr">Ольга Репина</h3>
+            <p class="team-text text-centr" lang="en">Frontend Developer</p>
           </li>
           <li>
             <img src="./images/Nikolay.jpg" alt="фотография Николая Тарасова" width="270"/>
-            <h3 class="team-title">Николай Тарасов</h3>
-            <p class="team-text" lang="en">Marketing</p>
+            <h3 class="team-title text-centr">Николай Тарасов</h3>
+            <p class="team-text text-centr" lang="en">Marketing</p>
           </li> 
           <li>
             <img src="./images/Mihail.jpg" alt="фотография Михаила Ермакова" width="270"/>
-            <h3 class="team-title">Михаил Ермаков</h3>
-            <p class="team-text" lang="en">UI Designer</p>
+            <h3 class="team-title text-centr">Михаил Ермаков</h3>
+            <p class="team-text text-centr" lang="en">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <!-- footer -->
-    <footer>
+    <footer class="page-footer">
+      <div class="container">
       <a class="logo link-none" href="./index.html">Web<span class="logo-footer">Studio</span></a>
       <address class="addresses">
-        <ul class="address-list list-none">
+        <ul class="address-list">
           <li><a class="map-address link-none" href="https://goo.gl/maps/XkNCHodQhnQYmGNX7" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a></li>
           <li><a class="contact-address link-none" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
           <li><a class="contact-address link-none" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
-</html>
+  </html>

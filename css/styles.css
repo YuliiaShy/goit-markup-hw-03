@@ -2,7 +2,7 @@
 :root {
     --general-text-color: #757575;
     --headline-text-color: #212121;
-    --general-background-color:#FFFFFF;
+    --hero-headline-color:#FFFFFF;
     --accent-color-blue: #2196F3;
     --background-color-buttons: #F5F4FA;
     --footer-background-color: #2F303A;
@@ -15,13 +15,35 @@ body {
 font-family: Roboto, sans-serif;
 letter-spacing: 0.03em;
 color: var(--general-text-color);
-background-color: var(--general-background-color);
+background-color: 
+var(--general-background-color);}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
 }
-.list-none {list-style: none;}
+ul {
+margin: 0;
+padding: 0;
+list-style: none;  
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+    width: 1200px;
+  outline: 2px solid coral ;
+} 
 .link-none {text-decoration: none;}
 .site-nav .link.current {
 color: var(--accent-color-blue);}
-.hidden {
+.visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -34,7 +56,21 @@ color: var(--accent-color-blue);}
   margin: -1px;}
 /* --------------------------STUDIO--------------------------------- */
 /* header */
+/* .page-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+} */
+.header-flex {
+  display: flex;
+}
+.nav-flex {
+  display: flex;
+}
 .logo {
+  padding-top: 24px;
+  padding-right: 93px;
+  padding-bottom: 25px;
 font-family: Raleway;
 font-weight: 700;
 font-size: 26px;
@@ -45,12 +81,28 @@ color: var(--accent-color-blue);
 {color: var(--logo-span-color);}
 
 /* site-nav */
+.site-nav {
+display: flex;
+}
+
 .link {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--headline-text-color);
+}
+.nav-item,
+.contact-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+.site-contacts { 
+  display: flex;
+  margin-left: auto;
 }
 .contact {
 font-weight: 500;
@@ -65,27 +117,31 @@ color: inherit;
 .contact:focus {
 color: var(--accent-color-blue);}
 
+.contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 /* hero */
 .hero {
+text-align: center;  
 background-color: 
 var(--footer-background-color);}
+
 .hero-title {
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
 letter-spacing: 0.06em;
-text-align: center;
 text-transform: uppercase;
-color: var(--general-background-color);
+color: var(--hero-headline-color);
 }
 /* button */
 .hero-button {
 font-family: inherit;
 font-weight: 700;
 line-height: 1.87;
-text-align: center;
 letter-spacing: 0.06em;
-color: var(--general-background-color);
+color: var(--hero-headline-color);
 background-color: var(--accent-color-blue);
 border: none;
 border-radius: 4px;
@@ -95,10 +151,10 @@ cursor: pointer;
 background-color: var(--hero-button-hover);}
 
 /* section-advantage */
-.advantage {
+/* .advantage {
 background-color: 
 var(--general-background-color);
-}
+} */
 .advantage-title {
 font-weight: 700;
 font-size: 14px;
@@ -112,10 +168,10 @@ line-height: 1.71;
 }
 
 /* section-services */
-.services {
+/* .services {
 background-color: 
 var(--general-background-color);
-}
+} */
 .section-title {
 font-weight: 700;
 font-size: 36px;
@@ -126,6 +182,7 @@ color: var(--headline-text-color);
 .team {
 background-color: 
 var(--background-color-buttons);
+
 }
 .team-title {
 font-weight: 500;
@@ -138,7 +195,7 @@ background-color:
 var(--footer-background-color);
 }
 .logo-footer {
-color: var(--general-background-color);    
+color: var(--hero-headline-color);    
 }
 .addresses {
 font-style: inherit;
@@ -146,7 +203,7 @@ font-size: 14px;
 line-height: 1.71; 
 }
 .map-address { 
-color: var(--general-background-color);   
+color: var(--hero-headline-color);   
 }
 .contact-address {
 color: rgba(255, 255, 255, 0.6);
@@ -158,7 +215,9 @@ color: rgba(255, 255, 255, 0.6);
 color: var(--accent-color-blue);  
 }
 /*----------------------------- PORTFOLIO -----------------------------*/
-
+/* .portfolio {
+  background-color: var(--hero-headline-color);
+} */
 /* filter buttons */
 .btn-filter {
 font-weight: 500;
@@ -173,9 +232,10 @@ cursor: pointer;
 .btn-filter:hover,
 .btn-filter:focus,
 .button-active {
-color: var(--general-background-color);
+color: var(--hero-headline-color);
 background: var(--accent-color-blue);
 }
+/* Examples list */
 .examples-title {
 font-weight: 700;
 font-size: 18px;
