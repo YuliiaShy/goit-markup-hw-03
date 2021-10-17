@@ -85,6 +85,7 @@ img {
 
 .nav-flex {
   display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -109,17 +110,14 @@ img {
 }
 
 .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--headline-text-color);
-}
-
-.nav-item,
-.contact-item {
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .nav-item:not(:last-child),
@@ -129,10 +127,14 @@ img {
 
 .site-contacts {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 
 .contact {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -154,10 +156,8 @@ img {
 }
 
 .hero-box {
-  width: 1200px;
   padding-top: 200px;
   padding-bottom: 200px;
-  margin: 0 auto;
 }
 
 .hero-title {
@@ -201,18 +201,15 @@ img {
 .advantage-flex {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -94px;
 }
 
 .advantage-list {
   display: flex;
   margin-right: calc( -1 * var(--card-set-gap));
-  
 }
 .advantage-item {
   margin-right: var(--card-set-gap);
   flex-basis: calc(100% / 4 - var(--card-set-gap));
-  
 }
 
 .advantage-title {
@@ -230,6 +227,10 @@ img {
 }
 
 /* section-services */
+.services {
+  padding-top: 0;
+}
+
 .services-flex {
   display: flex;
   flex-wrap: wrap;
@@ -289,14 +290,13 @@ img {
 }
 
 /* footer */
-footer {
-  background-color: var(--footer-background-color);
+.page-footer {
+  background-color: 
+  var(--footer-background-color);
 }
 .footer-box {
-  width: 1200px;
-  padding: 60px 15px;
-  margin: 0 auto;
-
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-address {
   font-family: Raleway;
@@ -309,13 +309,13 @@ footer {
   color: var(--hero-headline-color);
 }
 .addresses {
+  margin-top: 20px;
+
   font-style: inherit;
   font-size: 14px;
   line-height: 1.71;
 }
-.address-list{
-  margin-top: 20px;
-}
+
 .address-item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -340,7 +340,7 @@ footer {
 .buttons-list {
  display: flex;
  justify-content: center;
- margin-bottom: 34px;
+ margin-bottom: 56px;
 }
 
 .btn-item:not(:last-child) {
@@ -381,15 +381,14 @@ footer {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
 }
 .examples-border {
-  border: 1px solid var(--card-border-color);  
+  padding: 20px 24px;
+  border: 1px solid var(--card-border-color); 
+  border-top: none;  
 }
 
-.card-container {
-  padding: 20px 24px;
-}
 .examples-title {
   margin-bottom: 4px;
-
+  
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
